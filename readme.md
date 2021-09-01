@@ -12,6 +12,9 @@ All human subjects are de-identified and use only a study id.
 
 Files of interest: 
 DiaPRData2020.01.01.csv and base_smartphone.csv contain the CRF information from both Bangladesh and Mali. 
+
 dlbg with AFEs.csv and Mali_Afe.csv contain the TAC data needed to define etiology
+
 dhaka_weather.csv and Mali_weather.csv contain weather data needed for weather component of model 
+
 Files with Mod(s), OR, and xs contain fitted model and odds ratio information needed to calculate post-test odds 
