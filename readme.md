@@ -10,11 +10,33 @@ Annotated code (Phase_1_elife.R) and files necessary to complete the analysis ar
 All human subjects are de-identified and use only a study id. 
 
 
-Files of interest: 
+Files/Variables of interest: 
+
 DiaPRData2020.01.01.csv and base_smartphone.csv contain the CRF information from both Bangladesh and Mali. 
+ID, Code_Patient: Study ID
+AdmitDate,Date_Inclusion: Date of admission
+AgeMonths,Age-mois: Age of patient
+Form 2::MUAC1,FORM 3::MUAC2, MUAC1, MUAC2: MUAC cm
+Form 2::bloodstoolreported1.1,Form 3::bloodstoolreported2.1,Sang-Selle1: bloody stool yes/no
+Form 2::vomit1.1,Vomissement1: vomit yes/no 
+Form 2::breastfeeding1.1,Allaitement1: breastfeeding none/partial/exclusive
+Gender,Sexe: Male or Female 
+DiarrheaDays,Jours_Diarrhee: Number of days with diarrhea
+DiarrheaHours,Heure_Diarrhee: Number of hours with diarrhea
+DiarrheaEpisodes,Nombre_Selle: Number of episdoes of diarrhead
+Form 4::MotherEducation,Educ_Mere: Mother's education level
+Form 4::FatherEducation,Educ_Pere: Father's education level 
+Form 4::PeopleAtHome,Pers_menage: Number of people living at home
 
 dlbg with AFEs.csv and Mali_Afe.csv contain the TAC data needed to define etiology
+ID: Study ID
+All variables that end with _afe: used to establish etiology
+
 
 dhaka_weather.csv and Mali_weather.csv contain weather data needed for weather component of model 
+temp: temperature(celsius)
+rain: precipitation(inches) 
 
-Files with Mod(s), OR, and xs contain fitted model and odds ratio information needed to calculate post-test odds 
+
+RDS files with Mod(s), OR, and xs contain fitted model and odds ratio information needed to calculate post-test odds 
+These files contain R objects used to make prediction, not specific column names 
